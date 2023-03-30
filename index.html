@@ -1,4 +1,4 @@
-<!--Avae Johnson, WEB 140 Assignment 3-->
+<!--Avae Johnson, WEB 140 Vicious Cycles Project-->
 <!DOCTYPE html>
 <html lang="en">
 <!--This is the head which contains meta data-->
@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vicious Cycles</title>
 <style>
+   /* 
     section img#closeup {
         width: 80%;
         height: 50%;
@@ -26,7 +27,7 @@
     #biketext h2{
         text-align: center;
         /* width: 120%; */
-        font-size: 400%;
+        /*font-size: 400%;
         margin-top: 10% ;
         margin-left: 30%;
     }
@@ -41,8 +42,8 @@
     #social{
         /* margin-left: 80%;
         margin-top: -14%; */
-        text-align: right;
-    }
+        /*text-align: right;
+    }*/
 
 </style>
 </head>
@@ -50,53 +51,80 @@
 <body>
 
 <header role="banner">
-<!--The required header element for this assignment-->
+<!--This is the logo for Vicious Cycles-->
 <img src="images/vicious-cycles-logo.png" alt="vicious cycle logo" id="logo">
+</header>
+<div class="container"></div>
+    <div class="row">
+        <div class="col">
 <!--The required main element for this assignment-->
 <main role="main">
 <!--The required section element for this assignment-->
+    <!-- <section id="dropdown">
+        <button id="dropbtn">Inventory</button>
+            <div id="dropdown-content">
+                <a href="html/products.html">Products</a>
+                <a href="html/accessories.html">Accessories</a>
+            </div>
+    </section> -->
     <section>
-            <nav>
-                <a href="">Inventory</a>
-                <a href="">Service</a>
-                <a href="">Info</a>
-                <a href="">Reviews</a>
-            </nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="html/inventory.html">Inventory</a></li>
+                <li><a href="html/service.html">Service</a></li>
+                <li><a href="html/info.html">Info</a></li>
+                <li><a href="html/reviews.html">Reviews</a></li>
+            </ul>
         
-            <!--The required paragraph element for this assignment-->
-                <p>
-                 <img src="images/closeup.jpg" alt="" id="closeup" >
+            <!--The cover image for the homepage for this assignment-->
+                 <img src="images/closeup.jpg" alt="close up of motorbike" id="closeup" >
     </section>   
     <section id="biketext">
             <h2>A BIKE FOR <br> EVERYONE</h2>
     </section>
-    <section id="New Merch" style="margin-top: 25%;">
+    <section id="objective">
+            <h2>OUR OBJECTIVE</h2>
+    </section>
+    <section id="paragraph">
+        <p>The objective of our Vicious Cycles website is to provide an engaging and user-friendly platform that showcases our brand's range of motorbikes and accessories while also promoting sales, and building trust among riders within the Vicious Cycle community. Our Vicious Cycles website should be designed to create a seamless and enjoyable shopping experience, with intuitive navigation, clear product information, and easy access to customer support. The ultimate goal is to increase sales and revenue, while also establishing the brand as a leader in the motorbike industry, with a loyal and engaged customer base.</p>
+
+        <p>To achieve these objectives, our Vicious Cycles website is designed with the target audience in mind, taking into account their needs, preferences, and behaviors. This has required thorough research and analysis of the target audience's demographics, psychographics, and firmographics, as well as their online behavior and preferences. Based on this research, the Vicious Cycles website is designed to cater to their needs, focusing on usability, accessibility, and engagement.</p>
+            
+        <p>In addition to showcasing our brand's range of motorbikes and accessories, the Vicious Cycles website also features sales promotions, special offers, and incentives to encourage customers to make a purchase. This can include limited-time discounts, bundle deals, and other offers that make it more enticing for customers to buy. By promoting sales and generating revenue, the Vicious Cycles website supports the brand's growth and expansion, while also enhancing the customer experience.</p>
+            
+        <p>Ultimately, the objective of the Vicious Cycles website is to create a platform that establishes trust and loyalty among riders in the Vicious Cycle community, while also driving sales and revenue growth for the brand. By prioritizing user-friendliness, accessibility, and engagement, the website can help to achieve these objectives and position the brand for long-term success in the motorbike industry.</p>
+    </section>
+    <section id="NewMerch">
             <h2>NEW MERCHANDISE</h2>
+    </section>  
             <section id="images" style="display: flex; justify-content: space-between;">
                 <img src="images/frontview.jpg" alt="front view of motorbike" id="frontview">
                 <img src="images/person_bike.jpg" alt="Person on a bike" id="person">
                 <img src="images/sideview.jpg" alt="Side view of a bike" id="sideview">
-            </section>
-
-
-
-    </section>            
+            </section>      
 </main>
-<!--The required aside element for the assignment-->
+<!--The aside element for the assignment-->
 <aside>
         
 </aside>
 <!--The required footer for the assignment-->
-<footer id="contact">
- <section>   
-<h4>Contact Us</h4>
-<p>919.555.5555<br>123 Main St.<br>Anywhere,NC <br>27600</p>
-</section>
-<section id="social">
-    <h4>Social Media</h4>
-    <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" title="Vicious Cycles Twitter" target="_blank">Twitter</a><br>
-    <a href="https://about.meta.com/brand/resources/#_=_" title="Vicious Cycles Facebook" target="_blank">Facebook</a>
-</section>
-</footer> 
+<div id="page container">
+    <div id="content-wrap">
+</div>
+<footer class="footer">
+ <div class="col-1">
+    <h4>CONTACT US</h4>
+    <p>919.555.5555<br>123 Main St.<br>Anywhere,NC <br>27600</p>
+</div>
+ <div class="col-2">
+    <h4>SOCIAL MEDIA</h4>
+    <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="_blank"><img src= "images/twitter-square.svg" alt="twitter logo"></a>
+    <a href="https://about.meta.com/brand/resources/#_=_" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
+ </div> 
+        </div>
+    </div>  
+</div>
+</footer>
+</div>
 </body>
 </html>
