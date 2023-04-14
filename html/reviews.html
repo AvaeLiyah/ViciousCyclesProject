@@ -1,3 +1,4 @@
+<!--Contact Us Form page-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Reviews</title>
+    <title>Contact Us</title>
 </head>
 <!--This is the body tag which contains all of the contents of the HTML document-->
 <body>
@@ -18,11 +19,82 @@
             <section>
                     <ul>
                         <li><a href="../index.html">Home</a></li>
-                        <li><a href="inventory.html">Inventory</a></li>
+                        <li class="dropdown"><a href="inventory.html">Inventory</a>
+                            <div class="dropdown-content">
+                                <a href="products.html">Products</a>
+                                <a href="accessories.html">Accessories</a>
+                            </div>
+                        </li>
                         <li><a href="service.html">Service</a></li>
                         <li><a href="info.html">Info</a></li>
-                        <li><a href="reviews.html">Reviews</a></li>
+                        <li><a href="reviews.html">Contact Us</a></li>
                     </ul>
             </section>
+            <section id="Con">
+                <h2>Contact Us</h2>
+            </section>
+    <section class="form">
+        <form id="contact" method="post" action=""></form>
+        <fieldset>
+    <div class="TextBoxes">
+        <label class="formName" for = "userName"> First and Last Name</label> <input type="text" name="name" id="userName"> <br>
+        <label class="formEmail" for = "userEmail"> Email Address</label> <input type="text" name="email" id="userEmail"> <br>
+        <label class="formPhone" for = "userPhone"> Phone Number</label> <input type="text" name ="phone" id="userPhone"> <br>
+    </div>
+
+    <div class = "Checkboxes">
+        <label>Contact Option</label> <br>
+        <input type = "Checkbox" name = "preferredContact" value = "email" id = "email"><label for = "email">E-mail</label> <br>
+        <input type = "Checkbox" name = "preferredContact" value = "phone" id = "phone"><label for = "phone">Phone</label> <br>
+        <input type = "Checkbox" name = "preferredContacr" value = "none" id = "none"><label for = "none">None</label>
+    </div>
+
+    <div class = "RadioButtons">
+        <label>Would you like to sign up for future special offers?</label> <br>
+        <input type = "radio" name = "specialOffer" value = "yes" id = "yes"><label for = "yes">Yes</label>
+        <input type = "radio" name = "specialOffer" value = "no" id = "no"><label for = "no">No</label>
+    </div>
+
+    <!-- <hr> -->
+
+    <div class = "DropDown">
+        <label>Reason</label> <br>
+        <select class = "select" name = "contactType" id="contactType">
+            <option disabled selected>--Please select one option--</option>
+                <option value = "question">Question</option>
+                <option value = "concern">Concern</option>
+                <option value = "review">Review</option>
+        </select>
+    </div>
+
+    <div class = "TextBoxes">
+        <label class = "reasonLabel" for = "userReason">What can we assist you with?</label> <br>
+        <textarea class = "userReason"></textarea>
+    </div>
+
+    <div>
+        <input class = "formSubmit" type = "submit">
+    </div>
+        </fieldset>
+    </section>
+
+    <div id="page container">
+        <div id="content-wrap"></div>
+    <footer class="footer">
+     <div class="col-1">
+        <h4>CONTACT US</h4>
+        <p>919.555.5555<br>123 Main St.<br>Anywhere,NC <br>27600</p>
+    </div>
+        <div class="col-2">
+            <h4>SOCIAL MEDIA</h4>
+            <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="_blank"><img src= "../images/twitter-square.svg" alt="twitter logo"></a>
+            <a href="https://about.meta.com/brand/resources/#_=_" target="_blank"><img src="../images/facebook.svg" alt="facebook logo"></a>
+            <p>&copy; Vicious Cycles 2023</p>
+            <p>info@viciouscycles.com</p>
+        </div> 
+    </div>
+        </div>  
+    </div>
+    </footer>
 </body>
 </html>

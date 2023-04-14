@@ -8,44 +8,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Vicious Cycles</title>
-<style>
-   /* 
-    section img#closeup {
-        width: 80%;
-        height: 50%;
-        float: left;
-        margin-left: -25%;
-        margin-right: 20px;
-        margin-bottom: 20px;
-        padding: 0;
-    }
-    #biketext {
-        display: flex;
-        align-items: center;
-    }
-
-    #biketext h2{
-        text-align: center;
-        /* width: 120%; */
-        /*font-size: 400%;
-        margin-top: 10% ;
-        margin-left: 30%;
-    }
-
-    #frontview{
-        margin-left: -15%;
-    }
-    #sideview{
-        margin-right: -15%;
-    }
-
-    #social{
-        /* margin-left: 80%;
-        margin-top: -14%; */
-        /*text-align: right;
-    }*/
-
-</style>
 </head>
 <!--This is the body tag which contains all of the contents of the HTML document-->
 <body>
@@ -59,28 +21,30 @@
         <div class="col">
 <!--The required main element for this assignment-->
 <main role="main">
-<!--The required section element for this assignment-->
-    <!-- <section id="dropdown">
-        <button id="dropbtn">Inventory</button>
-            <div id="dropdown-content">
-                <a href="html/products.html">Products</a>
-                <a href="html/accessories.html">Accessories</a>
-            </div>
-    </section> -->
+
+<!--The required Nav bar for this assignment-->
+ 
     <section>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="html/inventory.html">Inventory</a></li>
+                <li class="dropdown"><a href="html/inventory.html">Inventory</a>
+                    <div class="dropdown-content">
+                        <a href="html/products.html">Products</a>
+                        <a href="html/accessories.html">Accessories</a>
+                    </div>
+                </li>
                 <li><a href="html/service.html">Service</a></li>
                 <li><a href="html/info.html">Info</a></li>
-                <li><a href="html/reviews.html">Reviews</a></li>
+                <li><a href="html/reviews.html">Contact Us</a></li>
             </ul>
         
             <!--The cover image for the homepage for this assignment-->
-                 <img src="images/closeup.jpg" alt="close up of motorbike" id="closeup" >
-    </section>   
-    <section id="biketext">
-            <h2>A BIKE FOR <br> EVERYONE</h2>
+                 <img src="images/BackgroundOverlay.jpg" alt="Two people popping wheelies on motorbikes" id="wheelie" >
+
+                    <div class="centered">A BIKE FOR EVERYONE!</div>
+    </section>
+       
+        <!-- The Objective Summary -->
     </section>
     <section id="objective">
             <h2>OUR OBJECTIVE</h2>
@@ -94,34 +58,41 @@
             
         <p>Ultimately, the objective of the Vicious Cycles website is to create a platform that establishes trust and loyalty among riders in the Vicious Cycle community, while also driving sales and revenue growth for the brand. By prioritizing user-friendliness, accessibility, and engagement, the website can help to achieve these objectives and position the brand for long-term success in the motorbike industry.</p>
     </section>
+
+    <!-- New Merchandise on the Website -->
+
     <section id="NewMerch">
             <h2>NEW MERCHANDISE</h2>
     </section>  
             <section id="images" style="display: flex; justify-content: space-between;">
-                <img src="images/frontview.jpg" alt="front view of motorbike" id="frontview">
-                <img src="images/person_bike.jpg" alt="Person on a bike" id="person">
-                <img src="images/sideview.jpg" alt="Side view of a bike" id="sideview">
+            
+                <img class="card" src="images/frontview.jpg" alt="front view of motorbike" id="frontview">
+            
+            
+                <img class="card" src="images/person_bike.jpg" alt="Person on a bike" id="person">
+            
+            
+                <img class="card" src="images/sideview.jpg" alt="Side view of a bike" id="sideview">
+           
             </section>      
 </main>
-<!--The aside element for the assignment-->
-<aside>
-        
-</aside>
+
 <!--The required footer for the assignment-->
 <div id="page container">
-    <div id="content-wrap">
-</div>
+    <div id="content-wrap"></div>
 <footer class="footer">
- <div class="col-1">
+ <div class="col-2">
     <h4>CONTACT US</h4>
     <p>919.555.5555<br>123 Main St.<br>Anywhere,NC <br>27600</p>
 </div>
- <div class="col-2">
-    <h4>SOCIAL MEDIA</h4>
-    <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="_blank"><img src= "images/twitter-square.svg" alt="twitter logo"></a>
-    <a href="https://about.meta.com/brand/resources/#_=_" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
- </div> 
-        </div>
+    <div class="col-2">
+        <h4>SOCIAL MEDIA</h4>
+        <a href="https://about.twitter.com/en/who-we-are/brand-toolkit" target="_blank"><img src= "images/twitter-square.svg" alt="twitter logo"></a>
+        <a href="https://about.meta.com/brand/resources/#_=_" target="_blank"><img src="images/facebook.svg" alt="facebook logo"></a>
+        <p>&copy; Vicious Cycles 2023</p>
+        <p>info@viciouscycles.com</p>
+    </div> 
+</div>
     </div>  
 </div>
 </footer>
